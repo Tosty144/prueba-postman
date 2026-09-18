@@ -1,13 +1,8 @@
-/*const app = require('./src/app');
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
-});*/
 const app = require('./src/app');
 
 const PORT = process.env.PORT || 3000;
 
+// En desarrollo local levanta el servidor normalmente
 if (process.env.NODE_ENV !== 'production') {
     app.listen(PORT, () => {
         console.log(`Servidor corriendo en http://localhost:${PORT}`);
